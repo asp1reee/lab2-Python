@@ -23,7 +23,7 @@ def looking_for_book():
 
     books_data = pandas.read_csv('books.csv', encoding='windows-1251', sep=';')
 
-    author_name = input('Введите автора:')
+    author_name = input('Введите автора: ')
     filtered_books = books_data[books_data['Автор'].str.contains(author_name, case=False, na=False)]
     allowed_years = [2014, 2016, 2017]
 
